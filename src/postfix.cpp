@@ -1,8 +1,8 @@
 // Copyright 2021 Ex10 TiNa
+#include <string>
+#include <iostream>
 #include "postfix.h"
 #include "MyStack.h"
-#include <iostream>
-#include <string.h>
 
 int Priority(char oper) {
     if (oper == '(')
