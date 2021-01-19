@@ -5,12 +5,12 @@
 
 template<typename T>
 class MyStack {
-private:
+ private:
     int top;
     int size;
     T* stack;
 
-public:
+ public:
     explicit MyStack(int sizeIn) {
         top = 0;
         size = sizeIn;
