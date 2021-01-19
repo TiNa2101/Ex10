@@ -16,7 +16,8 @@ int Priority(char oper) {
 }
 
 bool isOperator(char elem) {
-    if ((elem == '(') || (elem == ')') || (elem == '+') || (elem == '-') || (elem == '*') || (elem == '/'))
+    if ((elem == '(') || (elem == ')') || (elem == '+') || 
+        (elem == '-') || (elem == '*') || (elem == '/'))
         return true;
     else
         return false;
@@ -36,7 +37,8 @@ std::string infix2prefix(std::string inf) {
                 if (Priority(inf[i]) > Priority(stack.get())) {
                     stack.push(inf[i]);
                 } else {
-                    while (!stack.isEmpty() && Priority(stack.get()) >= Priority(inf[i])) {
+                    while (!stack.isEmpty() && 
+                           Priority(stack.get()) >= Priority(inf[i])) {
                         pref = pref + stack.pop() + ' ';
                     }
                     if (Priority(inf[i]) == 1) {
@@ -50,10 +52,8 @@ std::string infix2prefix(std::string inf) {
             }
         } else {
             if (inf[i + 1] == '.' || inf[i] == '.') {
-                std::cout << "/'" << 1 << "/'" << std::endl;
                 pref = pref + inf[i];
             } else {
-                std::cout << "/'" << 2 << "/'" << std::endl;
                 pref = pref + inf[i] + ' ';
             }
         }
