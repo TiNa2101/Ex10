@@ -2,7 +2,7 @@
 #ifndef INCLUDE_POSTFIX_H_
 #define INCLUDE_POSTFIX_H_
 #include <iostream>
-#include <string>
+#include <string.h>
 
 std::string infix2prefix(std::string inf);
 int Priority(char oper);
