@@ -43,7 +43,7 @@ std::string infix2prefix(std::string inf) {
                         if (Priority(stack.get()) == 0) {
                             stack.pop();
                         }
-                    } else { 
+                    } else {
                         stack.push(inf[i]);
                     }
                 }
