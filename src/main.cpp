@@ -1,6 +1,5 @@
 // Copyright 2021 Ex10 TiNa
 #include "postfix.h"
-#include "MyStack.h"
 #include <iostream>
 #include <string>
 
