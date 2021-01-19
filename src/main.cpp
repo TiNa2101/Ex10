@@ -2,6 +2,7 @@
 #include "postfix.h"
 #include "MyStack.h"
 #include <iostream>
+#include <string>
 
 int main()
 {
