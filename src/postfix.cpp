@@ -2,7 +2,7 @@
 #include "postfix.h"
 #include "MyStack.h"
 #include <iostream>
-#include <cstring>
+#include <string>
 
 int Priority(char oper) {
     if (oper == '(')
