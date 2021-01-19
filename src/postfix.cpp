@@ -16,7 +16,7 @@ int Priority(char oper) {
 }
 
 bool isOperator(char elem) {
-    if ((elem == '(') || (elem == ')') || (elem == '+') || 
+    if ((elem == '(') || (elem == ')') || (elem == '+') ||
         (elem == '-') || (elem == '*') || (elem == '/'))
         return true;
     else
@@ -37,7 +37,7 @@ std::string infix2prefix(std::string inf) {
                 if (Priority(inf[i]) > Priority(stack.get())) {
                     stack.push(inf[i]);
                 } else {
-                    while (!stack.isEmpty() && 
+                    while (!stack.isEmpty() &&
                            Priority(stack.get()) >= Priority(inf[i])) {
                         pref = pref + stack.pop() + ' ';
                     }
