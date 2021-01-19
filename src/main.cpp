@@ -1,7 +1,7 @@
 // Copyright 2021 Ex10 TiNa
-#include "postfix.h"
+#include <string>
 #include <iostream>
-#include <string.h>
+#include "postfix.h"
 
 int main() {
     std::string s1("(6 * (4 - 2) + 5) * (2.6 + 3 * 7) - 9");
